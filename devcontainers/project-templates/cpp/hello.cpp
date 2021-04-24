@@ -1,20 +1,20 @@
 #include <iostream>
-#include <vector>
+using namespace std;
 
-int
+int 
 main ()
 {
-  std::vector<int> v;
-  for (int i : {5, 4, 3, 2, 1})
-  {
-    v.push_back (i);
-  }
+  int number;
 
-  for (auto val : v)
-  {
-    std::cout << val << ' ';
+  cout << "Guess what number I am thinking of: " << endl;
+  cin >> number;
+
+  if (number == 10) {
+    cout << "You guessed correct!" << endl;
   }
-  std::cout << "\nHello, World!" << std::endl;
+  else {
+    cout << "That is incorrect. The correct number was 10." << endl;
+  }
 
   return 0;
 }
