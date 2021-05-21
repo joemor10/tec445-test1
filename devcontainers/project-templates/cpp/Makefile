@@ -1,4 +1,4 @@
-TARGET := studentreport
+TARGET := numbergame
 
 CXXFLAGS += -std=c++17 -g3 -Wall -Wextra
 
